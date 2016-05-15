@@ -1,0 +1,21 @@
+{
+  "name": "docker-logging-example",
+  "version": "1.0.0",
+  "description": "A simple NodeJS app that logs to console to later be redirected to Logstash",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever -l log.txt -o out.txt -e err.txt --spinSleepTime 10000 --minUptime 5000 -c 'nodemon --exitcrash ' index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docker",
+    "logstash",
+    "test"
+  ],
+  "author": "Franco Laiuppa",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "faker": "^3.1.0",
+    "lodash": "^4.12.0"
+  }
+}

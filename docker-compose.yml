@@ -1,0 +1,13 @@
+version: '2'
+services:
+  logger:
+    image: francolaiuppa/docker-nodemon-forever
+    volumes:
+      - "./:/usr/src/app"
+    command: "npm start"
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://127.0.0.1:5000"
+        tag: "logger-test"
+
