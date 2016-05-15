@@ -34,4 +34,4 @@ output {
 }
 ```
 
-Related blog post: [LINK]
+Related blog post: http://francolaiuppa.com/2016/05/15/routing-docker-container-logs-to-elk-using-compose/
