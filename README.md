@@ -12,6 +12,11 @@ your Logstash instance, then run
 
 `docker-compose up`
 
+## Any ways to run an ELK instance using Docker?
+Sure! I recommend you to use:
+
+https://github.com/deviantony/docker-elk
+
 The config I'm using for `Logstash` is the following:
 
 ```
